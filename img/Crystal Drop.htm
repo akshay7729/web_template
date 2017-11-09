@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://localhost/crystal_drop/#plans -->
+<html lang="en" ng-app="myApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Crystal Drop</title>
+	<link rel="stylesheet" href="./Crystal Drop_files/bootstrap.min.css">
+	<link rel="stylesheet" href="./Crystal Drop_files/font-awesome.min.css">
+	<link rel="stylesheet" href="./Crystal Drop_files/main.css">
+	<script src="./Crystal Drop_files/jquery-3.2.1.min.js"></script>
+	<script src="./Crystal Drop_files/bootstrap.min.js"></script>
+	<script src="./Crystal Drop_files/angular.min.js"></script>
+	<script src="./Crystal Drop_files/main.js"></script>
+	<script src="./Crystal Drop_files/app.js"></script>
+</head>
+<body ng-controller="MainController as main" class="ng-scope">
+	<div id="home"></div>
+	<nav class="navbar navbar-default navbar-fixed-top main-nav" style="background-color: rgb(33, 38, 37);">
+	  <div class="container-fluid">
+	    <div class="navbar-header" id="startchange">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand main-nav-brand" href="http://localhost/crystal_drop/#">Crystal Drop</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right main-nav-list">
+	        <li><a href="http://localhost/crystal_drop/#home" class="scroll_nav">Home</a></li>
+	        <li><a href="http://localhost/crystal_drop/#features" class="scroll_nav">Features</a></li>
+	        <li><a href="http://localhost/crystal_drop/#plans" class="scroll_nav">Plans</a></li>
+	        <li><a href="http://localhost/crystal_drop/#testimonials" class="scroll_nav">Testimonials</a></li>
+	        <li class="login_tab btn btn-success"><a href="http://localhost/crystal_drop/#">Log in</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="jumbotron main-jumbo">
+				<div class="container jumbo-content">
+					<h1>Crystal Drop</h1>
+					<h3>Mineralized Drinking Water</h3>
+				</div>
+				<div class="banner-cols">
+					<div class="col-md-4">
+						<div class="cols-inner">
+							<h3>Purest</h3>
+							<h4>We consistently exceed all standards as prescribed by FSAI</h4>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="cols-inner">
+							<h3>Safest</h3>
+							<h4>Untouched by hand, each dispenser’s integrity can be verified online via QR Code</h4>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="cols-inner">
+							<h3>Easiest</h3>
+							<h4>Your dispenser senses when it needs replacement and triggers delivery.</h4>
+						</div>
+					</div>
+				</div>
+				<div class="join_today">
+					<a class="btn btn-success" href="http://localhost/crystal_drop/#plans">Join Today</a>
+				</div>
+				<div id="features"></div>
+			</div>
+			<div class="features">
+				<h1>Features</h1>
+				<center><hr></center>
+				<!-- ngRepeat: y in main.features --><div class="features_list container ng-scope" ng-repeat="y in main.features">
+					<div class="features_content">
+						<h2 class="ng-binding">Purest</h2><center><hr></center>
+						<h4 class="ng-binding">CystalDrop Mineralized Drinking Water is processed in the most advanced plant with zero human touch. It is treated through a multiple process of purification so that the quality of water conforms or exceeds to the Packaged Drinking Water Quality Standards (PDWQS) as specified by Food Safety and Standards Authority of India (FSAI). Our water filtration process is ISI certified.</h4>
+					</div>
+				</div><!-- end ngRepeat: y in main.features --><div class="features_list container ng-scope" ng-repeat="y in main.features">
+					<div class="features_content">
+						<h2 class="ng-binding">Safest</h2><center><hr></center>
+						<h4 class="ng-binding">CystalDrop Mineralized Drinking Water is the safest in the world. The safety comes from an inbuilt ability to verify the quality, source, mineral composition and batch level test reports of every single dispenser via a QR Code.</h4>
+					</div>
+				</div><!-- end ngRepeat: y in main.features --><div class="features_list container ng-scope" ng-repeat="y in main.features">
+					<div class="features_content">
+						<h2 class="ng-binding">Easiest</h2><center><hr></center>
+						<h4 class="ng-binding">CystalDrop Mineralized Drinking Water comes with a way of tracking your delivery status.</h4>
+					</div>
+				</div><!-- end ngRepeat: y in main.features -->
+			</div>
+			<div id="plans"></div>
+			<div class="purchase_plans jumbotron">
+				<h1>Purchase Plans</h1><center><hr></center>
+				<div class="purchase_table">
+					<!-- ngRepeat: x in main.pricing --><a href="http://localhost/crystal_drop/#" ng-repeat="x in main.pricing" class="ng-scope">
+						<div class="purchase_table_inner">
+							<h2 class="ng-binding">30 Pack</h2>
+							<h3 class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 60/Can</h3>
+							<h1 class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 1800</h1>
+						</div>
+					</a><!-- end ngRepeat: x in main.pricing --><a href="http://localhost/crystal_drop/#" ng-repeat="x in main.pricing" class="ng-scope">
+						<div class="purchase_table_inner">
+							<h2 class="ng-binding">60 Pack</h2>
+							<h3 class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 54/Can</h3>
+							<h1 class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 3240</h1>
+						</div>
+					</a><!-- end ngRepeat: x in main.pricing --><a href="http://localhost/crystal_drop/#" ng-repeat="x in main.pricing" class="ng-scope">
+						<div class="purchase_table_inner">
+							<h2 class="ng-binding">90 Pack</h2>
+							<h3 class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 54/Can</h3>
+							<h1 class="ng-binding"><i class="fa fa-inr" aria-hidden="true"></i> 4860</h1>
+						</div>
+					</a><!-- end ngRepeat: x in main.pricing -->
+				</div>
+			</div>
+			<div id="testimonials"></div>
+			<div class="testimonials">
+				<h1>Testimonials</h1><center><hr></center>
+
+				<div id="carousel-example-generic" class="carousel slide testimonials-slider" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner testimonials-slider-inner" role="listbox">
+				    <div class="item">
+				      <img src="./Crystal Drop_files/rick.gif" alt="Rick Review" class="img-circle">
+				      <div class="carousel-caption">
+				        <h2>Rick</h2><hr>
+				        <h4>This has been a great experiience ordereing cans from crystal drop. Water quality is excellent and develivery on time. Planning to order more in the future.</h4>
+				      </div>
+				    </div>
+				    <div class="item active">
+				      <img src="./Crystal Drop_files/morty.gif" alt="Morty Review" class="img-circle">
+				      <div class="carousel-caption">
+				        <h2>Morty</h2><hr>
+				        <h4>This has been a great experiience ordereing cans from crystal drop. Water quality is excellent and develivery on time. </h4>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="./Crystal Drop_files/stewie.gif" alt="Stewie Review" class="img-circle">
+				      <div class="carousel-caption">
+				        <h2>Stewie</h2><hr>
+				        <h4>This has been a great experiience ordereing cans from crystal drop. Water quality is excellent and develivery on time. </h4>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<h4>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Crystal Drop 2017</h4>
+		<ul>
+			<!-- ngRepeat: i in main.icons --><li ng-repeat="i in main.icons" class="ng-scope"><a href="http://localhost/crystal_drop/#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li><!-- end ngRepeat: i in main.icons --><li ng-repeat="i in main.icons" class="ng-scope"><a href="http://localhost/crystal_drop/#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!-- end ngRepeat: i in main.icons --><li ng-repeat="i in main.icons" class="ng-scope"><a href="http://localhost/crystal_drop/#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li><!-- end ngRepeat: i in main.icons --><li ng-repeat="i in main.icons" class="ng-scope"><a href="http://localhost/crystal_drop/#"><i class="fa fa-skype" aria-hidden="true"></i></a></li><!-- end ngRepeat: i in main.icons --><li ng-repeat="i in main.icons" class="ng-scope"><a href="http://localhost/crystal_drop/#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li><!-- end ngRepeat: i in main.icons -->
+		</ul>
+	</footer>
+
+</body></html>
